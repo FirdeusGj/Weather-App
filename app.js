@@ -40,7 +40,7 @@ const successCallback = (position) => {
             let temp = Math.floor(data.main.temp + -273.1)
             locationNav.innerHTML = `${country} | ${weather1} | ${temp}°C`
         })
-  });
+  })
 };
 const errorCallback = (error) => {
   console.log(error);
