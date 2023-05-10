@@ -3,4 +3,37 @@
     padding: 0;
     border: 0;
     outline: none;
+    font-family: sans-serif;
+}
+.nav{
+    height: 20vh;
+    background: linear-gradient(#87cfeb76, transparent);
+}
+.nav__container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.nav__image--wrapper img{
+    height:20vh;
+}
+.nav__image--wrapper{
+    width: 50%;
+}
+.nav__location--wrapper{
+    width: 50%;
+}
+.nav__h1{
+    font-size: 3rem;
+}
+.nav__p{
+    font-size: 1.5rem;
+}
+.nav__location--text{
+    float: left;
+    text-align:start;
+}
+img{
+    height:200px;
 }
