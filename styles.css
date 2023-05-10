@@ -5,6 +5,11 @@
     outline: none;
     font-family: sans-serif;
 }
+
+
+/* NAVIGATION BAR */
+
+
 .nav{
     height: 20vh;
     background: linear-gradient(#87cfeb76, transparent);
@@ -36,4 +41,43 @@
 }
 img{
     height:200px;
+}
+
+
+/* SECTION */
+.container{
+    height: 80vh;
+}
+.search__box{
+    border:1px solid black;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    max-width: 50vh;
+    width: 100%;
+    margin: 0 auto;
+    height:10vh;
+    border-radius: 20px;
+}
+.fa-location-dot{
+    font-size: 1.9rem;
+    color:red;
+}
+.input__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+input{
+    font-size: 1.3rem;
+    padding: 5px;
+}
+input:focus{
+    outline: none;
+}
+button{
+    background-color:rgba(0, 157, 255, 0.289);
+    border-radius:50%;
+    font-size: 1.3rem;
+    padding: 8px;
 }

@@ -18,7 +18,7 @@
             <div class="nav__location--wrapper">
                 <div class="nav__location--text">
                     <h1 class="nav__h1">Weather App</h1>
-                    <p class="nav__p">Location</p>
+                    <p class="nav__p"></p>
                 </div>
             </div>
         </div>
@@ -26,19 +26,21 @@
     <section class="container">
         <div class="search__box">
             <i class="fa-solid fa-location-dot"></i>
-            <input type="text" placeholder="Enter Location">
-            <button class="fa-solid fa-magnifying-glass"></button>
+            <div class="input__wrapper">
+                <input onchange="inputChange(event)" type="text" placeholder="Enter Location">
+                <button onclick="weatherSearch()" class="fa-solid fa-magnifying-glass"></button>
+            </div>
         </div>
-        <div class="not__found">
+        <!-- <div class="not__found">
             <img src="./images/404.png" alt="">
             <p>Invalid  Location!</p>
-        </div>
-        <div class="weather__box">
+        </div> -->
+        <!-- <div class="weather__box">
             <img src="./images/clear.png" alt="">
             <p class="temperature"></p>
             <p class="description"></p>
-        </div>
-        <div class="weather__details">
+        </div> -->
+        <!-- <div class="weather__details">
             <div class="humidity">
                 <i class="fa-solid fa-water"></i>
                 <div class="text">
@@ -53,7 +55,7 @@
                     <p>Wind Speed</p>
                 </div>
             </div>
-        </div>
+        </div> -->
     </section>
 </body>
 </html>
