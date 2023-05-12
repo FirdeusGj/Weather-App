@@ -38,6 +38,7 @@
 .nav__location--text{
     float: left;
     text-align:start;
+    margin-left: 20vh;
 }
 img{
     height:200px;
@@ -53,10 +54,10 @@ img{
     align-items: center;
     display: flex;
     justify-content: center;
-    max-width: 50vh;
+    max-width: 25rem;
     width: 100%;
     margin: 0 auto;
-    height:10vh;
+    height:5rem;
     border-radius: 20px;
 }
 .fa-location-dot{
@@ -78,6 +79,44 @@ input:focus{
 button{
     background-color:rgba(0, 157, 255, 0.289);
     border-radius:50%;
-    font-size: 1.3rem;
-    padding: 8px;
+    font-size: 1rem;
+    padding: 12px;
+}
+span{
+    font-weight: 700;
+}
+
+
+/*  RESULTS  */
+
+.searchResult__wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.result__image--wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:50%;
+}
+.result__image{
+    height: auto;
+    width: 65vh;
+}
+.searchResult__description--wrapper{
+    width: 48%;
+    margin-top:6vh;
+}
+.searchResult__description{
+    display: flex;
+    flex-direction: column;
+    line-height: 9vh;
+    font-size: 2rem;
+}
+.searchResult__description p{
+    background-color: aliceblue;
+    border-radius: 20px;
+    margin: 3px 0;
+    padding-left: 2rem;
 }

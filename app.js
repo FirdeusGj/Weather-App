@@ -33,8 +33,22 @@ function weatherSearch() {
       console.log(wind)
       console.log(name)
       console.log(humidity)
-      console.log(data.cod)
-      searchResult.innerHTML = `<p>It's ${temp}°C</p>`
+      searchResult.innerHTML = `
+      <div class="searchResult__wrapper">
+            <div class="result__image--wrapper">
+                <img class="result__image" src="./images/${weather}.png" alt="">
+            </div>
+            <div class="searchResult__description--wrapper">
+                <div class="searchResult__description">
+                    <h2>${name}</h2>
+                    <p>Weather : <span>${weather}</span> | ${weatherDesc}</p>
+                    <p>Temperature : ${temp}<span>°C</span> | ${temp + 273.1}<span>K</span> | ${(temp * 9/5) + 32}<span>°F</span></p>
+                    <p>Wind speed : ${wind}km/h</p>
+                    <p>Humidity : ${humidity}%</p>
+                </div>
+            </div>
+        </div>
+      `
     }).catch((error) => error = searchResult.innerHTML = `<p>No data</p>` );
   inputSearch = "";
   input.value = "";
