@@ -49,7 +49,11 @@ function weatherSearch() {
             </div>
         </div>
       `
-    }).catch((error) => error = searchResult.innerHTML = `<p>No data</p>` );
+    }).catch((error) => error = searchResult.innerHTML = `
+    <div class="notFound__wrapper">
+      <img class="notFound" src="./images/404.png"/>
+      <h1>Location not found</h1>
+    </div>` );
   inputSearch = "";
   input.value = "";
 }

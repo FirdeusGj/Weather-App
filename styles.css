@@ -120,3 +120,17 @@ span{
     margin: 3px 0;
     padding-left: 2rem;
 }
+.notFound__wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 5vh;
+}
+.notFound__wrapper h1{
+    margin-top: 15px;
+    font-size: 2rem;
+}
+.notFound{
+    height: 50vh;
+}
