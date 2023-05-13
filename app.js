@@ -51,8 +51,8 @@ function weatherSearch() {
                     <p>Temperature : ${temp}<span>°C</span> | ${
         temp + 273.1
       }<span>K</span> | ${(temp * 9) / 5 + 32}<span>°F</span></p>
-                    <p>Wind speed : ${wind}km/h</p>
-                    <p>Humidity : ${humidity}%</p>
+                    <p>Wind speed : ${wind}<span>km/h</span></p>
+                    <p>Humidity : ${humidity}<span>%</span></p>
                 </div>
             </div>
         </div>

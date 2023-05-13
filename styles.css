@@ -147,12 +147,27 @@ span {
     margin: 0;
   }
   .nav__h1 {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
   .searchResult__description--wrapper {
     width: 95%;
   }
   .searchResult__description h2 {
     text-align: center;
+  }
+  .result__image--wrapper{
+    width: 95%;
+  }
+  .result__image{
+    max-width: 50vh;
+    width:100%;
+  }
+}
+@media (max-width: 500px){
+  .nav__h1{
+    font-size: 1.5rem;
+  }
+  .nav__p{
+    font-size: 1rem;
   }
 }
