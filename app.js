@@ -1,7 +1,7 @@
 const input = document.querySelector("input");
 const locationNav = document.querySelector('.nav__p')
 const searchResult = document.querySelector('.search__results');
-
+const container = document.querySelector('.container');
 input.addEventListener("keyup", function (e) {
   if (e.keyCode === 13) {
     weatherSearch();
@@ -33,6 +33,18 @@ function weatherSearch() {
       console.log(wind)
       console.log(name)
       console.log(humidity)
+      if(weather === 'Rain' || weather === 'Drizzle' || weather === 'Thunderstorm'){
+        container.style.background = 'linear-gradient(white, #C4D3DF)'
+      }
+      if(weather === 'Clear'){
+        container.style.background = 'linear-gradient(white, #9FDBE7)'
+      }
+      if(weather === 'Clouds'){
+        container.style.background = 'linear-gradient(white, #909D9E)'
+      }
+      if(weather === 'Snow'){
+        container.style.background = 'linear-gradient(white, #e6e6e6)'
+      }
       searchResult.innerHTML = `
       <div class="searchResult__wrapper">
             <div class="result__image--wrapper">
