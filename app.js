@@ -12,9 +12,6 @@ function inputChange(event) {
   inputSearch = event.target.value;
 }
 function weatherSearch() {
-  if(input.value === ''){
-    return searchResult.innerHTML = '<p>type something</p>'
-  }
   fetch(
     `https://api.openweathermap.org/data/2.5/weather?q=${inputSearch}&appid=22a10d8913927bd9b9c38ed8d772ea60`
   )
@@ -65,7 +62,7 @@ function weatherSearch() {
     <div class="notFound__wrapper">
       <img class="notFound" src="./images/404.png"/>
       <h1>Location not found</h1>
-    </div>` );
+    </div>`, container.style.background = 'none');
   inputSearch = "";
   input.value = "";
 }

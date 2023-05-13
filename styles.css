@@ -84,6 +84,9 @@ button{
     font-size: 1rem;
     padding: 12px;
 }
+button:hover{
+    cursor: pointer;
+}
 span{
     font-weight: 700;
 }
@@ -136,4 +139,24 @@ span{
 }
 .notFound{
     height: 50vh;
+}
+@media (max-width: 970px){
+    .searchResult__wrapper{
+        flex-direction: column;
+    }
+    .container{
+        height: auto;
+    }
+    .nav__location--text{
+        margin: 0;
+    }
+    .nav__h1{
+        font-size: 2.5rem;
+    }
+    .searchResult__description--wrapper{
+        width:95%
+    }
+    .searchResult__description h2{
+        text-align: center;
+    }
 }
